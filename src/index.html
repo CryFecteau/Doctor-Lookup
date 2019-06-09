@@ -3,5 +3,25 @@
     <head>
         <title>Doctors Near Me</title>
     </head>
-    <body>Hello</body>
+    <body>
+        <h1 id="header">Find Your Doctor</h1>
+        <div class="container">
+            <label><strong>Search for doctors in the Seattle Area</strong></label>
+            <button type="submit" class="btn btn-primary">Search Now</button><br><br>
+            <label for="specialty"><strong>Find your doctors by specialty</strong></lable>
+            <input id="specialty" type = "text" required placeholder="Specialty">
+            <button type="button" class="btn btn-primary">Find Specialty</button><br><br>
+            <label for="name"><strong>Find your doctor by name</strong></label>
+            <input id="name" type="text" required placeholder="Chad">
+            <button type="button" class="btn btn-primary" id="searchByName">Find Name</button>
+        </div>
+        <div id="result">
+            <h1>Your Results:</h1>
+            <p id="sentence"></p>
+            <ul id="specialtyResult"></ul>
+            <div id="reload">
+                <button type="button" class="btn btn-primary" id="home">Home</button>
+            </div>
+        </div>
+    </body>
 </html>
